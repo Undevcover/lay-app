@@ -95,9 +95,9 @@ function Feed({ feed, i }) {
           <UserCardGroup users={userGroup} />
         </div>
 
-        <div onClick={openNow} className="feed__answers">
+        <div className="feed__answers">
           <Divider orientation="center" plain className="qa-divider">
-            <div className="inner">
+            <div  onClick={openNow} className="inner">
               <span className="__text">Lay Answers</span>
               <GrDown className="__icon" />
               {/* <HiOutlineChevronRight className="__icon" /> */}
