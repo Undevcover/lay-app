@@ -7,8 +7,7 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 import { BsFillBookmarkFill, BsFlagFill, BsFillBellFill } from "react-icons/bs";
 import { TfiLink } from "react-icons/tfi";
 import { IoMdShareAlt } from "react-icons/io";
-import { BiUpvote } from "react-icons/bi";
-import { BiDownvote } from "react-icons/bi";
+import { BiUpvote, BiDownvote } from "react-icons/bi";
 import "../Assets/styles/feed.scss";
 import UserCard from "./UserCard";
 import UserCardGroup from "./UserCardGroup";
@@ -97,7 +96,7 @@ function Feed({ feed, i }) {
 
         <div className="feed__answers">
           <Divider orientation="center" plain className="qa-divider">
-            <div  onClick={openNow} className="inner">
+            <div onClick={openNow}  onClick={openNow} className="inner">
               <span className="__text">Lay Answers</span>
               <GrDown className="__icon" />
               {/* <HiOutlineChevronRight className="__icon" /> */}
